@@ -13,6 +13,6 @@ function multiply(a, b) {
     return a * b;
 }
 
-// Exporting the 'calculateSum' and 'multiply' functions.
-// This makes them available for import in other files using 'require'.
-module.exports = {calculateSum, multiply};
+// Exporting the 'calculateSum' and 'multiply' functions using ES module syntax.
+// This makes them available for import in other files using 'import' statements.
+export { calculateSum, multiply };

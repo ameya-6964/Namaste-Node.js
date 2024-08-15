@@ -1,9 +1,9 @@
-// Destructuring the exported 'name' and 'getName' properties from 'anotherFile.js'
-// 'require' is used to include these exports from another module.
-let {name, getName} = require("./anotherFile.js");
+// Importing 'name' and 'getName' functions from 'anotherFile.js'.
+// The 'import' statement is used in ES modules to bring in exported variables and functions from other files.
+import { name, getName } from './anotherFile.js';
 
-// Destructuring the exported 'calculateSum' and 'multiply' properties from 'calculateSum.js'
-let {calculateSum, multiply} = require("./calculateSum.js");
+// Importing 'calculateSum' and 'multiply' functions from 'calculateSum.js'.
+import { calculateSum, multiply } from './calculateSum.js';
 
 // Logging the 'name' variable imported from 'anotherFile.js' to the console.
 console.log(name);

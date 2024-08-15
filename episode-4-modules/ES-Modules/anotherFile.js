@@ -6,6 +6,6 @@ function getName(name) {
     return name;
 }
 
-// Exporting the 'getName' function and 'name' variable.
-// This allows them to be imported in other files using 'require'.
-module.exports = {getName, name};
+// Exporting the 'getName' function and 'name' variable using ES module syntax.
+// The 'export' keyword is used to make variables and functions available for import in other files.
+export { getName, name };
