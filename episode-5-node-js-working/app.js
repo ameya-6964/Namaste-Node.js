@@ -1,7 +1,8 @@
-// When this line runs, Node.js executes the wrapped IIFE from calculate.js
-const calculate = require('./calculate.js');
+//! When this line runs, Node.js executes the wrapped IIFE from calculate.js
 
-/*                      Working Of IIFE Behind The Scenes
+const { add , subtract} = require('./calculate.js');
+
+/*                   Working Of IIFE Behind The Scenes
 
 (function (exports, require, module, __filename, __dirname) {
     // The original content of calculate.js goes here
@@ -14,8 +15,8 @@ const calculate = require('./calculate.js');
     }
 
     module.exports = {
-        add,       // shorthand for 'add: add'
-        subtract   // shorthand for 'subtract: subtract'
+        add,
+        subtract
     };
 
 })(module.exports, require, module, __filename, __dirname);
